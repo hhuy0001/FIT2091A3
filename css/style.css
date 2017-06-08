@@ -43,14 +43,23 @@ nav a:hover {
 
 nav .selected { background:rgba( 255,255,255,0.5 ); }
 
+#logo {
+  width: 10vw;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 #shangri-la-intro {
   background-image: url(shangrila.jpg);
+  background-size: cover;
 }
 
 #el-dorado-intro {
   background-image: url(eldorado.jpg);
+  background-size: cover;
 }
 
-#atlantis {
+#atlantis-intro {
   background-image: url(atlantiscity.jpg);
+  background-size: cover;
 }
