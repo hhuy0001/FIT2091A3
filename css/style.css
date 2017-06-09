@@ -115,3 +115,31 @@ nav .selected { background:rgba( 0,0,0,0.5 ); }
   display:none;
   color: red;
 }
+
+#mermaid {
+  width: 15vw; height: 15vw;
+  overflow: hidden;
+
+  left: 5vw; bottom: 5vh;
+}
+
+#mermaid-sprites {
+  width: 150vw;
+  animation: mermaid-sprites 1s steps(10) infinite;
+}
+
+#doritos {
+  height: 10vh;
+  bottom: 0vh; left: -15vh;
+  animation: dorito-fall 2s linear infinite;
+}
+
+@keyframes mermaid-sprites {
+  0% { transform: translateX(0);}
+  100% { transform: translateX(-150vw);}
+}
+
+@keyframes dorito-fall {
+  0% { transform: translateY(-70vh);}
+  100% { transform: translateY(20vh);}
+}
