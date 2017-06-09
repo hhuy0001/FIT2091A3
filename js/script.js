@@ -36,3 +36,26 @@ function animateScroll(){
   document.documentElement.scrollTop = scrollPosition;
   document.body.scrollTop = scrollPosition;
 }
+
+$( setupForm );
+
+function setupForm() {
+  $('#clearButton').on('click', clearName);
+  $('#newsletterform').on('submit', checkForm);
+}
+
+function clearName() {
+  $field = $( '#name' );
+  console.log( $field.attr( 'id' ), $field.val() );
+  $field.val('');
+}
+
+function checkForm(event) {
+  event.preventDefault();
+  if ($('#name').val() && $('#email').val()){
+    this.submit();
+  } else {
+    $('#error').fadeIn();
+    $('#name').focus();
+  }
+}

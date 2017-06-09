@@ -1,5 +1,5 @@
 * {
-  margin:0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -9,6 +9,8 @@ section {
   align-items: center; justify-content: space-around;
   font-size:3vmin;
   font-family: 'Roboto', sans-serif;
+  color: lightgrey;
+  text-align: center;
 }
 
 h1 {
@@ -24,33 +26,54 @@ body {
 /* Navigation */
 nav {
   position: fixed;
-  bottom: 2vmin; left: 30vw;
+  bottom: 2vmin; right: 2vmin;
   font-family: 'Roboto', sans-serif;
   z-index:1;
-  min-width: 50%;
 }
 
 nav a {
-  display: inline-block; width: 4vmin; height:3vmin; margin-right: 1vmin;
-  background:rgba( 0,0,0,0.5 ); color:#fff;
-  border:2px solid #444; border-radius: 5%;
+  display: block; width: 4vmin; height:4vmin; margin-bottom: 1vmin;
+  background:rgba(192,192,192,0.5); color:#fff;
+  border:2px solid #444; border-radius: 20%;
   user-select: none;
 }
 
 nav a:hover {
-  background: #212;
+  background: darkgrey;
 }
 
-nav .selected { background:rgba( 255,255,255,0.5 ); }
+nav .selected { background:rgba( 0,0,0,0.5 ); }
 
 #logo {
-  width: 10vw;
+  width: 30vw;
   margin: auto;
   margin-top: 0;
   margin-bottom: 0;
 }
+
+#intro {
+  background-color: #000b96;
+  background-image: url(pattern.jpg);
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+#info {
+  background-color: #000b96;
+  background-image: url(pattern.jpg);
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
 #shangri-la-intro {
   background-image: url(shangrila.jpg);
+  background-size: cover;
+}
+
+#shangri-la-content {
+  background-image: url(rainforest.jpg),
+                    linear-gradient(#004f00, #044503);
+  background-blend-mode: overlay, normal;
   background-size: cover;
 }
 
@@ -59,7 +82,36 @@ nav .selected { background:rgba( 255,255,255,0.5 ); }
   background-size: cover;
 }
 
+#el-dorado-content {
+  background-image: url(mud.jpg),
+                    linear-gradient(#1c1c1a, #544234);
+  background-blend-mode: overlay, normal;
+}
+
 #atlantis-intro {
   background-image: url(atlantiscity.jpg);
   background-size: cover;
+}
+
+#atlantis-content {
+  background-image: url(sea.jpg),
+                    linear-gradient(30deg, #0730ee 25%, #28d0f4);
+  background-blend-mode: overlay, normal;
+  background-size: cover;
+}
+
+#newsletter {
+  background-color: #000b96;
+  background-image: url(pattern.jpg);
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+#newsletterform {
+  text-align: left;
+}
+
+#error {
+  display:none;
+  color: red;
 }
